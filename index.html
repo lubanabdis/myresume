@@ -57,13 +57,14 @@
   transition: opacity 0.3s ease-in-out;
 }
 
-.img-background:hover::before {
-  opacity: 1;
+.img-background {
+ position: relative;
 }
 
 .oval-img {
-  border-radius: 50%; /* Mengubah gambar menjadi oval */
-  overflow: hidden; /* Menghapus bagian gambar yang melewati batas oval */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .center-italic {
@@ -77,11 +78,14 @@
 }
 
 .oval-img-container {
-  width: 100%;
-  padding-top: 100%; /* Menjaga aspek rasio 1:1 untuk latar belakang */
-  position: relative;
-  overflow: hidden;
-  border-radius: 50%; /* Membuat efek oval */
+    width: 100%;
+    height: 0;
+    padding-top: 100%; /* Maintains aspect ratio of 1:1 */
+    border-radius: 50%; /* Makes it an oval shape */
+    overflow: hidden; /* Hides the parts outside the oval */
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .oval-img-container img {
@@ -143,14 +147,14 @@
         <div class="row">
           <div class="col-lg-4 img-background">
             <div class="oval-img-container">
-            <img src="assets/img/wokeh.png" class="img-fluid oval-img" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content">
+              <img src="assets/img/wokeh.png" class="img-fluid oval-img" alt="">
+            </div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content">
             <h3 class="center-italic text-center">LUBAN ABDI SUSANTO, S.KOM.</h3>                        
             <p class="fst-italic">
               Below is a brief overview of my biodata and information about me, which is listed as follows:
             </p>
-            <div class="row">
+        <div class="row">
               <div class="col-lg-6">
                 <ul>
                   <li style="text-align: justify;"><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>Maros, 15 November 1997</span></li>
