@@ -40,6 +40,32 @@
       border-radius: 50%; /* Membuat gambar menjadi oval dengan border-radius 50% */
       overflow: hidden; /* Menghilangkan bagian gambar yang terpotong di luar batas oval */
     }
+
+  .col-lg-4 {
+      position: relative; /* Membuat kontainer kolom berperilaku sebagai kontainer posisi */
+    }
+
+  .background-animation {
+      position: absolute; /* Memosisikan latar belakang di dalam kontainer */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #FF5733, #FFD700); /* Gradien latar belakang animasi */
+      opacity: 0.6; /* Opacity (kecerahan) latar belakang */
+      z-index: -1; /* Membuat latar belakang berada di bawah elemen lain */
+      animation: gradientAnimation 10s infinite alternate; /* Menambahkan animasi gradien */
+    }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+    
   </style>
   
 </head>
@@ -90,6 +116,7 @@
 
         <div class="row">
           <div class="col-lg-4">
+            <div class="background-animation"></div> <!-- Elemen latar belakang animasi -->
             <img src="assets/img/wokeh.png" class="img-fluid oval-img" alt="">
           </div>
         <div class="col-lg-8 pt-4 pt-lg-0 content">
@@ -257,9 +284,6 @@
             <div class="resume-item pb-0">
               <h4>Luban Abdi Susanto</h4>
               <p style="text-align: justify;"><em> I am a Fresh Graduate in Informatics Engineering from Muhammadiyah University of Jember. With 1.5 years of experience at Tegalsari Police Sub-Station as an IT Operator, responsible for managing media, cyber patrols, making Tegalsari Police Sub-Station the most active within Banyuwangi Regional Police. Furthermore, I have 7 months of IT Support experience at PT WIKI NIRWANA WANGSA, along with a year of involvement in the NFT-Crypto field. I also have a strong interest in data analysis, specifically in the field of Data Mining & Deep Learning. Some of the tools I am proficient in include Python, Java, Google Collaboratory for Data Analysis; Wordpress, SQL, HTML/JavaScript/PHP for Web Development; Canva, Corel Video Studio X9 for Graphic Design; and Ms. Office (Word, Excel, and Power Point) for Administration.</em></p>
-              <ul>
-                <li>Banyuwangi, East Java, Indonesian.</li>
-              </ul>
             </div>
 
             <h3 class="resume-title">Education</h3>
@@ -367,7 +391,7 @@
               <img src="assets/img/portfolio/portofolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <h4>Image Classification of Skin Lesion Similar to Monkeypox Virus Using VGG-19 Convolutional Neural Network</h4>
-                <p>SINTA-4</p>
+                <p>Research SINTA-4</p>
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/portofolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Research 1"><i class="bx bx-plus"></i></a>
                   <a href="portfolio-details.html" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
