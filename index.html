@@ -71,6 +71,27 @@
   line-height: 1.5; /* Mengatur jarak baris vertikal untuk menjaga keberadaan di tengah */
 }
     
+.img-background {
+  position: relative;
+  overflow: hidden;
+}
+
+.oval-img-container {
+  width: 100%;
+  padding-top: 100%; /* Menjaga aspek rasio 1:1 untuk latar belakang */
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%; /* Membuat efek oval */
+}
+
+.oval-img-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+   
   </style>
 </head>
 
