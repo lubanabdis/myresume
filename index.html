@@ -21,6 +21,8 @@
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+Use Control + Shift + m to toggle the tab key moving focus. Alternatively, use esc then tab to move to the next interactive element on the page.
+
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
@@ -39,46 +41,51 @@
       text-align: justify;
     }
 
-.img-background::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, rgba(63, 81, 181, 0.8) 0%, rgba(156, 39, 176, 0.8) 100%);
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-}
-
-.img-background {
-  position: relative;
-  overflow: hidden;
-}
-
-.oval-img {
-  .oval-img {
-  border-radius: 50%; /* Mengubah gambar menjadi oval */
-  overflow: hidden; /* Menghapus bagian gambar yang melewati batas oval */
-}
-
-.center-italic {
-  text-align: center;
-  line-height: 1.5; /* Mengatur jarak baris vertikal untuk menjaga keberadaan di tengah */
-}
-
-.oval-img-container {
-    width: 100%;
-    height: 0;
-    padding-top: 100%; /* Maintains aspect ratio of 1:1 */
-    border-radius: 50%; /* Makes it an oval shape */
-    overflow: hidden; /* Hides the parts outside the oval */
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
+    .img-background::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(63, 81, 181, 0.8) 0%, rgba(156, 39, 176, 0.8) 100%);
+      z-index: -1;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+    }
+    
+    .img-background {
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .oval-img {
+      .oval-img {
+      border-radius: 50%; /* Mengubah gambar menjadi oval */
+      overflow: hidden; /* Menghapus bagian gambar yang melewati batas oval */
+    }
+    
+    .center-italic {
+      text-align: center;
+      line-height: 1.5; /* Mengatur jarak baris vertikal untuk menjaga keberadaan di tengah */
+    }
+    
+    .oval-img-container {
+        width: 100%;
+        height: 0;
+        padding-top: 100%; /* Maintains aspect ratio of 1:1 */
+        border-radius: 50%; /* Makes it an oval shape */
+        overflow: hidden; /* Hides the parts outside the oval */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+      
+    .with-border {
+        border: 2px solid #ccc; /* Change color and size as desired */
+        border-radius: 8px; /* Rounded corners for the border */
+        padding: 20px; /* Add padding for spacing */
+    }
    
   </style>
 </head>
@@ -460,9 +467,8 @@
         </div>
 
         <div class="row">
-
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box iconbox-blue">
+            <div class="icon-box iconbox-blue with-border">
               <div class="icon">
                 <img src="assets/img/digitalent.ico" alt="Icon">
               </div>
@@ -472,7 +478,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
-            <div class="icon-box iconbox-orange ">
+            <div class="icon-box iconbox-orange with-border">
              <div class="icon">
                  <img src="assets/img/mathworks.ico" alt="Icon">
               </div>
@@ -482,7 +488,7 @@
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
+            <div class="icon-box iconbox-pink with-border">
              <div class="icon">
                  <img src="assets/img/lskbig.ico" alt="Icon">
               </div>
@@ -492,7 +498,7 @@
           </div>   
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
+            <div class="icon-box iconbox-pink with-border">
                <div class="icon">
                <img src="assets/img/academy.ico" alt="Icon">
               </div>
@@ -502,7 +508,7 @@
           </div> 
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
+            <div class="icon-box iconbox-pink with-border">
               <div class="icon">
                 <img src="assets/img/academy.ico" alt="Icon">  
               </div>
@@ -512,7 +518,7 @@
           </div>  
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
-            <div class="icon-box iconbox-pink">
+            <div class="icon-box iconbox-pink with-border">
                <div class="icon">
                <img src="assets/img/kemendikbud.ico" alt="Icon">
               </div>
