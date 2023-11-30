@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Portfolio Details - Personal Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: MyResume
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kedelai1.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kedelai2.jpg" alt="">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kedelai3.jpg" alt="">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <ul>
+                <li><strong>Category</strong>: Research</li>
+                <li><strong>Purpose</strong>: Independent Research</li>
+                <li><strong>Project date</strong>: 24 November, 2023</li>
+                <li><strong>Project URL</strong>: <a href="http://journal.umg.ac.id/index.php/indexia/article/view/5508" target="_blank">Indexia: Informatic & Computational Intelligent Journal</a></li> <a href="https://scholar.google.com/citations?view_op=view_citation&hl=id&user=eTkPrt4AAAAJ&citation_for_view=eTkPrt4AAAAJ:d1gkVwhDpl0C" target="_blank">Google Scholar</a> <li><a href="https://www.researchgate.net/publication/369796248_Classification_of_Skin_Lesion_Similar_to_Monkeypox_Virus_Using_VGG-19_Convolutional_Neural_Network" target="_blank">ResearchGate</a></li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>Abstract</h2>
+              <p>
+                Soybeans are a popular food. Yield estimates in Indonesia range between 1.2 and 1.5 tons per hectare, still far below the potential yield of 2 to 2.5 tons per hectare. Disease disorders in soybean plants are one of the causes of low yields, so farmers must know the diseases that attack soybeans so they can choose the right type of disease and treatment. The disease assistance laboratory process is still not efficient so it takes a long time. Computer vision and deep learning can now be used to recognize predictive information on objects, regardless of where they are positioned. Convolutional Neural Network (CNN) is the most frequently used deep learning technique today. This research uses a CNN architecture, namely AlexNet, with hyperparameter tuning to classify soybean disease images. Hyperparameter tuning greatly influences model performance. The dataset used contains 1,500 images of diseases on soybean leaves, consisting of 3 classes, namely Caterpillar, Diabrotica Speciosa, and Healthy. Setting hyperparameters on AlexNet CNN with bath size 12, dropout 0.2, Adam optimizer produces the best results in terms of accuracy values ​​of 84%, precision 81.95%, recall 80.66%, and f1-score 80.96%.
+              </p>  
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
